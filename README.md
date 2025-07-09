@@ -29,8 +29,11 @@
 ## 4. Struktur Paket GTPDOOR
 
 [ip_header] + [udp_header]
+
 └─ [gtp_header]
+
 ├─ flags
+
 ├─ type (misal: 0x01 = Echo Request)
 ├─ length
 └─ tei (biasanya tidak dipakai)

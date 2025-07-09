@@ -111,12 +111,8 @@ Membuat mutex file: /var/run/daemon.pid
 Menolak SIGCHLD untuk hindari zombie process
 
 ## 11. Kelemahan & Kerentanan
-Target sistem lama tanpa patch.
-
-Tersamar sebagai proses sistem.
-
-GRX sebagai vector utama karena sifatnya tertutup dan lintas operator.
-
-Potensi eksploitasi melalui info dari dokumen GSMA IR.21 (berisi IP/APN/GT).
-
+- Target sistem lama tanpa patch.
+- Tersamar sebagai proses sistem.
+- GRX sebagai vector utama karena sifatnya tertutup dan lintas operator.
+- Potensi eksploitasi melalui info dari dokumen GSMA IR.21 (berisi IP/APN/GT).
 📝 Catatan: Sampai saat ini, GTPDOOR belum terdokumentasi secara luas di forum publik. Temuan ini bisa menjadi indikator serangan baru terhadap infrastruktur telekomunikasi global.

@@ -28,25 +28,19 @@
 
 ## 4. Struktur Paket GTPDOOR
 
-[ip_header] + [udp_header]
+[ip_header] + [udp_header]  
+└── [gtp_header]  
+&emsp;├── flags  
+&emsp;├── type (misal: 0x01 = Echo Request)  
+&emsp;├── length  
+&emsp;└── tei (biasanya tidak dipakai)  
+&emsp;&emsp;└── [gtpdoor_header]  
+&emsp;&emsp;&emsp;├── pad[5]  
+&emsp;&emsp;&emsp;├── key1  
+&emsp;&emsp;&emsp;├── cmdMsgType  
+&emsp;&emsp;&emsp;├── cmdLength  
+&emsp;&emsp;&emsp;└── payload[2020]
 
-└─ [gtp_header]
-
-├─ flags
-
-├─ type (misal: 0x01 = Echo Request)
-├─ length
-└─ tei (biasanya tidak dipakai)
-└─ [gtpdoor_header]
-├─ pad[5]
-├─ key1
-├─ cmdMsgType
-├─ cmdLength
-└─ payload[2020]
-
-markdown
-Copy
-Edit
 
 ## 5. Tipe Pesan & Perintah
 

@@ -116,3 +116,5 @@ Menolak SIGCHLD untuk hindari zombie process
 - GRX sebagai vector utama karena sifatnya tertutup dan lintas operator.
 - Potensi eksploitasi melalui info dari dokumen GSMA IR.21 (berisi IP/APN/GT).
 📝 Catatan: Sampai saat ini, GTPDOOR belum terdokumentasi secara luas di forum publik. Temuan ini bisa menjadi indikator serangan baru terhadap infrastruktur telekomunikasi global.
+
+Sumber: https://haxrob.net/gtpdoor-a-novel-backdoor-tailored-for-covert-access-over-the-roaming-exchange/#active-gtpdoor-network-scanner

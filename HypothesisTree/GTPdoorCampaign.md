@@ -88,8 +88,6 @@
 
 ## 🧭 Visual Structure (Text)
 
-## 🧭 Visual Structure (HTML-style tree)
-
 Main Hypothesis  
 ├── Entry Point  
 &emsp;├── Misconfigured Node  

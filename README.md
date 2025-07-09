@@ -107,10 +107,10 @@
 bash
 nohup ./gtpdoor 2>&1 2>/dev/null &
 Membuat mutex file: /var/run/daemon.pid
-
+```
 Menolak SIGCHLD untuk hindari zombie process
 
-11. Kelemahan & Kerentanan
+## 11. Kelemahan & Kerentanan
 Target sistem lama tanpa patch.
 
 Tersamar sebagai proses sistem.

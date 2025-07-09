@@ -88,27 +88,26 @@
 
 ## 🧭 Visual Structure (Text)
 
-Main Hypothesis
-│
-├── Entry Point
-│ ├── Misconfigured Node
-│ ├── Insider Access
-│ └── Exposed Interface
-│
-├── Tooling
-│ ├── GTPdoor + ICMP
-│ ├── SGSNEmu Masquerade
-│ └── Fileless Implant
-│
-├── Objectives
-│ ├── Metadata Exfil
-│ ├── Long-Term Persistence
-│ └── Lateral Movement
-│
-└── Actor Archetype
-├── LightBasin
-├── GALLIUM
-└── Unknown
+## 🧭 Visual Structure (HTML-style tree)
+
+Main Hypothesis  
+├── Entry Point  
+&emsp;├── Misconfigured Node  
+&emsp;├── Insider Access  
+&emsp;└── Exposed Interface  
+├── Tooling  
+&emsp;├── GTPdoor + ICMP  
+&emsp;├── SGSNEmu Masquerade  
+&emsp;└── Fileless Implant  
+├── Objectives  
+&emsp;├── Metadata Exfil  
+&emsp;├── Long-Term Persistence  
+&emsp;└── Lateral Movement  
+└── Actor Archetype  
+&emsp;├── LightBasin  
+&emsp;├── GALLIUM  
+&emsp;└── Unknown
+
 
 
 ---

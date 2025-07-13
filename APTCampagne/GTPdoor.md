@@ -1,0 +1,7 @@
+<img width="2691" height="628" alt="Stealth APT Campagne" src="https://github.com/user-attachments/assets/6c4ea49e-4c34-4a14-a8cb-7f2ca0e6817d" />
+
+GTPdoor merupakan bagian dari kampanye APT yang menyasar infrastruktur jaringan seluler, khususnya komponen GPRS seperti GGSN dan SGSN. Serangan diawali dengan pemetaan node GRX menggunakan pemindaian port GTP-C (UDP 2123) dan ICMP. Setelah itu, aktor mendapatkan akses awal melalui SSH brute-force atau eksploitasi sistem Linux yang belum ditambal. Malware GTPdoor kemudian ditanam dan disamarkan sebagai proses sistem, aktif tanpa membuka port baru, dan hanya memantau lalu lintas protokol GTP.
+
+Komunikasi C2 dilakukan secara pasif menggunakan GTP Echo Request yang dimodifikasi sebagai "magic packet", di mana payload perintah dienkripsi secara sederhana menggunakan XOR cipher berkualitas rendah, cukup untuk menghindari deteksi permukaan tapi mudah diurai oleh analis berpengalaman. Malware akan merespons melalui GTP Echo Response atau memicu reverse shell saat mendeteksi pola TCP knock dari aktor.
+
+Setelah aktif, GTPdoor dapat menjalankan perintah shell, menyedot data konfigurasi jaringan, dan bahkan melakukan pergerakan lateral ke node jaringan lain menggunakan akses internal seperti SSH antar server. Seluruh komunikasi dan aktivitasnya disamarkan dalam protokol dan trafik standar jaringan seluler, menjadikannya stealthy dan sulit dideteksi oleh sistem keamanan tradisional.
